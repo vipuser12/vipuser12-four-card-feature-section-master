@@ -1,0 +1,104 @@
+$Desktop: 1440px;
+$Red: hsl(0, 78%, 62%);
+$Cyan: hsl(180, 62%, 55%);
+$Orange: hsl(34, 97%, 64%);
+$Blue: hsl(212, 86%, 64%);
+$VeryDarkBlue: hsl(234, 12%, 34%);
+$GrayishBlue: hsl(229, 6%, 66%);
+$VeryLightGray: hsl(0, 0%, 98%);
+$Fontsize: 15px;
+$fontfamily: Poppins;
+
+html{
+   font-family: sans-serif;
+
+}
+.container{
+    margin: 0 auto;
+    background-color: $VeryLightGray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .top{
+      margin: 0 auto;
+      text-align: center;
+   .top-p{
+      font-size: 30px;
+      color: $VeryDarkBlue;
+      font-weight: lighter;
+      font-family:sans-serif, light;
+
+   }
+   h1{
+      font-weight: bold;
+      color: $VeryDarkBlue;
+  
+   }
+   p{
+      color: $VeryDarkBlue;
+   }
+  }
+  .wrapper{
+   display: grid;
+   grid-template-columns: repeat(3, 410px);
+   grid-template-rows: repeat(2, 315px);
+   gap: 50px;
+   margin-top: 70px;
+   p{
+      line-height: 25px;
+      color: $VeryDarkBlue;
+   }
+   h3{
+      color: $VeryDarkBlue;
+   }
+  
+   .item-Supervisor{
+      border-top: 5px solid $Cyan;
+      padding: 30px;
+      position: relative;
+      top: 200px; 
+      box-shadow: 0px 0px 8px 0px $GrayishBlue;
+      border-radius: 10px;
+     }
+
+     .item-Team-Builder{
+      border-top: 5px solid $Red;
+      padding: 30px;
+      box-shadow: 0px 0px 8px 0px $GrayishBlue;
+      border-radius: 10px;
+
+     }
+   
+   .item-Karma{
+      border-top: 5px solid $Orange;
+      grid-area: 2 / 2;
+      box-shadow: 0px 0px 8px 0px $GrayishBlue;
+      padding: 30px;
+      border-radius: 10px;
+
+   }
+   .item-Calculator{
+      border-top: 5px solid $Blue;
+      padding: 30px;
+      position: relative;
+      top: 200px; 
+      box-shadow: 0px 0px 8px 0px $GrayishBlue;
+      border-radius: 5px;
+
+   }
+  }
+  img{
+   display: flex;
+   position: relative;
+   top: 65px;
+   left: 260px;
+  }
+}
+footer{
+   margin-top: 50px;
+   a{
+      text-decoration: none;
+      color: rgb(198, 75, 75)
+   }
+}
